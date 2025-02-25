@@ -12,6 +12,33 @@
 - [go-mod-secrets](https://github.com/edgexfoundry/go-mod-secrets/blob/main/CHANGELOG.md) (indirect dependency)
 - [go-mod-configuration](https://github.com/edgexfoundry/go-mod-configuration/blob/main/CHANGELOG.md) (indirect dependency)
 
+## [4.0.0] Odessa - 2025-03-12 (Only compatible with the 4.x releases)
+
+### ✨  Features
+
+- Enable PIE support for ASLR and full RELRO ([a83730c…](https://github.com/edgexfoundry/device-onvif-camera/commit/a83730c2ca7660bd580c8c11ae1217f2c0590c44))
+
+
+### ♻ Code Refactoring
+
+- Update go module to v4 ([9683ead…](https://github.com/edgexfoundry/device-onvif-camera/commit/9683eadad6a6839e290b802346720f2e8068c870))
+```text
+
+BREAKING CHANGE: update go module to v4
+
+```
+
+### 🐛 Bug Fixes
+
+- Add Clients and MessageBus Host in config to allow env overrides ([b15dd37…](https://github.com/edgexfoundry/device-onvif-camera/commit/b15dd379a12335186161310b4f4cd640302a8412))
+- Ensures that the parsed value falls within the int32 range ([22d23d7…](https://github.com/edgexfoundry/device-onvif-camera/commit/22d23d7ae3353e0154e35ebad73c72e7f4fdf7f8))
+- Fix incorrect conversion between integer types ([528a90e…](https://github.com/edgexfoundry/device-onvif-camera/commit/528a90ea40b70368105a33b93baeba7a4762d77e))
+- Only one ldflags flag is allowed ([1059907…](https://github.com/edgexfoundry/device-onvif-camera/commit/10599072c9655e29548c116613113411af81b17c))
+
+### 👷 Build
+
+- Upgrade to go-1.23, Linter1.61.0 and Alpine 3.20 ([2342540…](https://github.com/edgexfoundry/device-onvif-camera/commit/2342540ef65f1397ecb34c477184ee441b1d0a60))
+
 
 ## [v3.1.0] Napa - 2023-11-15 (Only compatible with the 3.x releases)
 
